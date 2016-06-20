@@ -1,0 +1,10 @@
+doctype
+html(lang="en")
+  != partial("_partials/_head")
+  body
+    != partial("_partials/_header")
+    main
+      for target, slug in public._data.targets
+        section.target-section(id=slug)
+          h1= target.section
+    != partial("_partials/_scripts")

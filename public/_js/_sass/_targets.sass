@@ -1,0 +1,36 @@
+=vendor($property, $value...)
+  -webkit-#{$property}: $value
+  -moz-#{$property}: $value
+  -ms-#{$property}: $value
+  -o-#{$property}: $value
+  #{$property}: $value
+
+%cubic-bezier-transition
+  +vendor(transition, all .35s cubic-bezier(0.19, 1, 0.22, 1))
+
+// NAVIGATION
+
+section.target-section
+  @extend %cubic-bezier-transition
+  display: block
+  width: 100vw
+  position: relative
+  float: left
+
+.target-active
+  background-color: red
+
+.target-hovered
+  background-color: green
+
+// APP INITIAL
+body.initial
+  section.target-section
+    height: 20vh
+
+// APP ACTIVE
+body.activated
+  section.target-section
+    height: 2.5vh
+  section.target-section.target-active
+    height: 90vh

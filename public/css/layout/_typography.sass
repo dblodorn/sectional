@@ -1,0 +1,15 @@
+//-------------------------------------------------------------------
+//  TYPE STYLING
+//-------------------------------------------------------------------
+
+h1
+  +type($monospace, 300, 2rem, 1.5, 4px, left, $type-color, uppercase, normal)
+p
+  +type($monospace, 400, 1rem, 1.65, normal, left, $type-color, none, normal)
+
+a
+  color: $type-color
+  cursor: pointer
+  font-style: italic
+  &:hover
+    color: $type-color
