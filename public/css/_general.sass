@@ -13,6 +13,7 @@ body
   width: 100vw
   min-height: 100vh
   margin: 0
+  background-color: $black
   *
     @extend %border-box
 
@@ -28,18 +29,21 @@ main
   min-height: 100vh
   width: 100vw
 
-img
-  width: 100%
-  height: auto
-  margin-bottom: -3px
 
-// Select
+section.target-section
+  overflow: hidden
+  border-top: 1rem white solid
 
-a[href],
-input[type='submit'],
-input[type='image'],
-label[for],
-select,
-button,
-.pointer
-  cursor: pointer !important
+  svg
+    position: absolute
+    top: -20%
+    left: -1.25%
+    width: 104%
+    height: 136%
+
+section.target-section.target-active
+  svg
+    top: -20%
+    height: 136%
+    path
+      fill: $black

@@ -1,19 +1,19 @@
 {
   "targets": {
     "section_one": {
-      "section": "section_one"
+      "section": "01.svg"
     },
     "section_two": {
-      "section": "section_two"
+      "section": "02.svg"
     },
     "section_three": {
-      "section": "section_three"
+      "section": "03.svg"
     },
     "section_four": {
-      "section": "section_four"
+      "section": "04.svg"
     },
     "section_five": {
-      "section": "section_five"
+      "section": "05.svg"
     }
   }
 }

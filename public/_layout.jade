@@ -4,7 +4,14 @@ html(lang="en")
   body
     != partial("_partials/_header")
     main
-      for target, slug in public._data.targets
-        section.target-section(id=slug)
-          h1= target.section
+      section.target-section(id="section_one")
+        include imgs/01.svg
+      section.target-section(id="section_two")
+        include imgs/02.svg
+      section.target-section(id="section_three")
+        include imgs/03.svg
+      section.target-section(id="section_four")
+        include imgs/04.svg
+      section.target-section(id="section_five")
+        include imgs/05.svg
     != partial("_partials/_scripts")
